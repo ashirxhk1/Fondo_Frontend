@@ -1,0 +1,91 @@
+<div class="secure-main-section">
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="col col-lg-5">
+                <div class="search">
+                    <input type="search" class="form-control border-black-50 rounded-4 px-5 py-2"
+                        id="formGroupExampleInput" placeholder="Search...">
+                    <h5 class="text-green"><i class="fa-solid fa-magnifying-glass icon"></i></h5>
+                    <h5 class="text-green"><i class="fa-solid fa-sliders slider"></i></h5>
+                </div>
+            </div>
+
+            <div class="col col-lg-5">
+                <select class="form-select rounded-4 w-25 py-2 border-3">
+                    <option selected>All</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+            </div>
+
+            <div class="col col-lg-2">
+                <div class="header-icons mt-2">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <i class="fa-solid fa-bell"></i>
+                </div>
+            </div>
+
+
+            <!-- Top Restaurant -->
+
+
+            <h4 class="my-3 text-purple fw-bold mb-3">Top Restaurant</h4>
+
+
+            <ul class="shadow p-3 rounded-2">
+                <li class="d-flex flex-wrap gap-3 text-center">
+                    @for (item of TopRestaurant; track item.id) {
+                    <a (click)="nevigate(item.url)"
+                    class="text-decoration-none shadow p-3 rounded-5 text-purple" style="width: 135px;">
+                        <img class="rounded-circle" width="90px" height="90px" [src]="item.icon" alt="">
+                        <p class="mb-0 my-1 small text-green">{{item.name}}</p>
+                        <p class="mb-0 text small"><i class="fa-solid fa-star text-yellow"></i> {{item.rating}}</p>
+                    </a>
+                    }
+                </li>
+            </ul>
+
+            <!-- Top Seller Products -->
+
+
+            <h4 class="text-purple fw-bold my-3">Top Seller Products</h4>
+
+
+            <ul class="shadow p-3 rounded-2">
+                <li class="list-unstyled d-flex flex-wrap gap-4">
+                    @for (item of TopSellerProducts; track item.id) {
+                    <a href="#" class="text-decoration-none text-purple mb-4 shadow rounded-4" style="width: 240px;">
+                        <div>
+                            <img class="rounded-4" width="100%" [src]="item.icon" alt="">
+                        </div>
+
+                        <div class="p-3">
+                            <div class="d-flex justify-content-between mt-2 fw-bold">
+                                <p class="mb-0 ">
+                                    {{item.name}}
+                                </p>
+                                <p class="mb-0 text-orange">
+                                    {{item.price}}
+                                </p>
+                            </div>
+                            <div class="d-flex align-items-center gap-2">
+                                <p class="mb-0 small">({{item.rating}})</p>
+                                <p class="mb-0 small text-yellow">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    }
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</div>

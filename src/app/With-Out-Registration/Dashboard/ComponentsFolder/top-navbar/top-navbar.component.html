@@ -1,0 +1,23 @@
+<div class="toggle">
+    <div class="d-flex justify-content-between align-items-center bg-purple px-3 py-1">
+        <img width="70px" src="/assets/BrandLogo.svg" alt="">
+        <h5 class="mb-0 toggle-icon">
+            <i class="fa-solid fa-bars"></i>
+        </h5>
+    </div>
+    
+</div>
+
+<div class="show-navbar">
+    <nav class="top-navbar ">
+        <ul class="list-unstyled">
+            <li>
+                @for (links of navLinks; track links.id){
+                <a [routerLink]="links.url">
+                    {{ links.name }}
+                </a>
+                }
+            </li>
+        </ul>
+    </nav>
+</div>

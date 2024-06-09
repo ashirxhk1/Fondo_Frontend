@@ -1,0 +1,20 @@
+.heading{
+    color: #228000;
+    font-weight: 600;
+}
+.landing-btns{
+    width: 250px;
+    height: 50px;
+    border: 1px solid #228000;
+    color: #228000;
+    font-size: 18px;
+}
+.landing-btns:hover{
+    background-color: #228000;
+    color: white;
+    transform: scale(1.2);
+    transition: all .5s ease-in-out;
+}
+.landing-btns:not(:hover){
+    transition: all .5s ease-in-out;
+}

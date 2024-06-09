@@ -1,0 +1,23 @@
+<nav class="shadow h-100 side-navbar">
+    <div class="brandLogo">
+        <img width="120px" src="../../../../../assets/BrandLogo.svg" alt="">
+    </div>
+    <div class="navItems">
+        <ul>
+            <li class="px-3">
+                @for (links of navLinks; track links.id){
+
+                <a [routerLink]="links.url">
+                    <img [src]="links.icon" class="mx-3"> {{ links.name }}
+                </a>
+                }
+
+            </li>
+        </ul>
+    </div>
+
+</nav>
+
+
+
+

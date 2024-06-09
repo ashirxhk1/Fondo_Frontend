@@ -1,0 +1,57 @@
+.login-register{
+    margin: 70px 0;
+}
+.logRegister-btns{
+    width: 218px;
+    height: 40px;
+    border: 1px solid #4d0340;
+    color: #4d0340;
+    font-size: 15px;
+}
+.logRegister-btns:hover{
+    background-color: #4d0340;
+    color: white;
+    transform: scale(1.1);
+    transition: all .5s ease-in-out;
+}
+.logRegister-btns:not(:hover){
+    transition: all .5s ease-in-out;
+}
+.active-btn{
+    background-color: #4d0340;
+    color: white;
+}
+.title{
+    color: #4d0340;
+}
+.subtitle{
+    color: #228000;
+}
+.register-btn{
+    width: 164px;
+    height: 39px;
+    border: 1px solid #228000;
+    color: #228000;
+    font-size: 15px;
+}
+.register-btn:hover{
+    background-color: #228000;
+    color: white;
+    transform: scale(1.1);
+    transition: all .5s ease-in-out;
+}
+.register-btn:not(:hover){
+    transition: all .5s ease-in-out;
+}
+
+@media(max-width:1024px){
+    .login-register{
+        margin: 10px 0;
+    }
+}
+
+
+.success-snackbar {
+    background-color: green;
+    color: white;
+  }

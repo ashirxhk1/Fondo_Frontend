@@ -1,0 +1,162 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.secure-main-section {
+  margin: 20px;
+  // width: 100%;
+}
+
+// Global-CSS
+.text-green {
+  color: #228000;
+}
+.bg-green {
+  color: white;
+  background-color: #228000;
+}
+.text-purple {
+  color: #4d0340;
+}
+.bg-purple {
+  background-color: #4d0340;
+  color: white;
+}
+.text-yellow {
+  color: #ffc700;
+}
+.text-orange {
+  color: #ea6a12;
+}
+
+// main-container
+
+.side-navbar {
+  width: 300px;
+}
+.show-navbar{
+  display: none;
+}
+.top-navbar {
+  position: absolute;
+  right: 0px;
+  z-index: 1;
+  background-color: #4d033fa2;
+  color: white;
+  width: 250px;
+  ul {
+    list-style: none;
+  }
+  li {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+    background-color: #228000;
+    margin: 10px;
+    padding: 5px 20px;
+    border-radius: 20px;
+  }
+}
+
+.toggle{
+  display: none;
+}
+
+// Verification-Form-Buttons
+
+.form-btn {
+  width: 140px;
+  height: 40px;
+  border: 1px solid #228000;
+  color: #228000;
+  font-size: 15px;
+}
+.form-btn:hover {
+  background-color: #228000;
+  color: white;
+  transform: scale(1.1);
+  transition: all 0.5s ease-in-out;
+}
+.form-btn:not(:hover) {
+  transition: all 0.5s ease-in-out;
+}
+
+// Search-Box
+.search {
+  position: relative;
+}
+.search-icon {
+  position: absolute;
+  left: 15px;
+  bottom: 10px;
+  font-size: 22px;
+  color: #228000;
+}
+.header-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  font-size: 22px;
+  color: #4d0340;
+}
+
+// Admin Bell-icon
+.bell-icon {
+  position: relative;
+}
+.bell-dot {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 8px;
+  color: red;
+}
+
+// table-row
+.table-row {
+  vertical-align: middle;
+}
+
+// Search-Box
+
+.search {
+  position: relative;
+}
+.icon {
+  position: absolute;
+  top: 13px;
+  left: 13px;
+}
+.slider {
+  position: absolute;
+  top: 13px;
+  right: 13px;
+}
+
+@media (max-width: 1000px) {
+  .side-navbar {
+    display: none;
+  }
+  .show-navbar{
+    display: contents;
+  }
+  .toggle{
+    display: contents;
+  }
+  
+  
+}
+.success-snackbar {
+  background-color: green;
+  color: white;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

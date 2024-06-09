@@ -1,0 +1,50 @@
+<div class="login-register">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7 ">
+                <img class="rounded-3" width="100%" height="100%" src="../../assets/login-main.png" alt="">
+            </div>
+
+
+
+            <div class="col-lg-5 p-4 shadow rounded-3">
+                
+               
+
+               
+                <div class="d-flex justify-content-between">
+                    <button type="button" class="btn btn-light me-2 mt-2 logRegister-btns active-btn" >Login</button>
+                    <button type="button" class="btn btn-light ms-2 mt-2 logRegister-btns" (click)="gotoRegister()">Register</button>
+                </div>
+
+                <h2 class="fw-bold mt-3 mb-0 title">WELCOME</h2>
+                <p class="fw-bold subtitle small">Please Create Your Account</p>
+
+            <form [formGroup]="form" (ngSubmit)="login()" novalidate>
+
+                <div class="mt-4">
+                    <label class="mb-2 mx-2 fw-bold">Username or Email</label>
+                    <input type="text" class="form-control bg-light rounded-5 border-black-50 p-2" formControlName="UserName">
+                </div>
+
+                <div class="mt-4">
+                    <label class="mb-2 mx-2 fw-bold">Password</label>
+                    <input type="password" class="form-control bg-light rounded-5 border-black-50 p-2" formControlName="Password">
+                </div>
+            
+
+                <div class="d-flex justify-content-between align-items-center mt-5 mx-3">
+                    <button type="submit" class="btn btn-light login-btn">Login</button>
+                </div>
+            </form>
+                <div
+                    class="d-flex justify-content-center align-items-center gap-3 bg-light w-75 mx-auto rounded-5 mt-5 px-4 py-2">
+                    <p class="mb-0"><img src="../../../assets/google-icon.svg" alt=""></p>
+                    <p class="mb-0">login with Google</p>
+                </div>
+                <p class="small text-center mt-2">Terms and Conditions & Privacy Policy</p>
+
+            </div>
+        </div>
+    </div>
+</div>

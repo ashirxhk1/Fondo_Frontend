@@ -1,0 +1,232 @@
+<div class="secure-main-section">
+    <div class="container-fluid">
+        <div class="row">
+            <div>
+                <img width="100%" src="/assets/details-picture.png" alt="">
+            </div>
+
+            <div class="col-lg-7">
+                <div class="row">
+                    <div class="col-lg-12 my-4">
+
+                        <div class="d-flex flex-wrap justify-content-between">
+                            <div class="d-flex align-items-center mb-2 gap-2">
+                                <img class="rounded-circle" width="60px" height="60px"
+                                    src="../../../../../assets/top-restaurant.jpg" alt="">
+                                <div>
+                                    <h5 class="mb-0 fw-bold">Res American Bistro</h5>
+                                    <p class="mb-0 small text-purple fw-bold small text-green">Elevated steaks, seafood
+                                    </p>
+                                </div>
+                            </div>
+
+
+
+                            <p class="fw-bold text-danger"><span class="mx-1"><i
+                                        class="fa-regular fa-clock text-black-50"></i></span>Close Now</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12">
+                        <div class="d-flex gap-2">
+                            <button type="button" class="btn btn-light w-100 bg-purple"><span class="mx-2"><i
+                                        class="fa-solid fa-plus"></i></span>Follow</button>
+                           
+                            <button type="button" class="btn btn-light w-100 bg-green"><span class="mx-2"><i
+                                        class="fa-solid fa-utensils"></i></span>Menu</button>
+                        </div>
+                    </div>
+
+                    <div>
+                        <p class="my-3 text-purple fw-bold">Opening Hours: 9:00AM to 11:00 PM</p>
+
+                        <ul>
+                            <li class="d-flex gap-3 mb-2">
+                                <h6 class="fw-bold"><i class="fa-solid fa-phone text-green"></i></h6>
+                                <h6 class="fw-bold">+123 4567890</h6>
+                            </li>
+                            <li class="d-flex gap-3 mb-2">
+                                <h6 class="fw-bold"><i class="fa-regular fa-envelope text-green"></i></h6>
+                                <h6 class="fw-bold">traceweb123example.com</h6>
+                            </li>
+                            <li class="d-flex gap-3 mb-2">
+                                <h6 class="fw-bold"><i class="fa-solid fa-location-dot text-green"></i></h6>
+                                <h6 class="fw-bold">1309 Francis Ave, Halethorpe, MD 21227, United States</h6>
+                            </li>
+                        </ul>
+                        <h4 class="text-purple fw-bold">Gellery</h4>
+                        <ul class="list-unstyled">
+                            <li class=" d-flex flex-wrap p-3 gap-3  shadow rounded-3 w-100">
+                                @for (item of GelleryImg; track item.id) {
+                                <a class="" href="#">
+                                    <img class="rounded-3" width="129px" [src]="item.img" alt="">
+                                </a>
+                                }
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+
+                        <h4 class="fw-bold text-purple">Follower</h4>
+
+                        <ul class="list-unstyled shadow rounded-3 p-3">
+                            <li class="d-flex flex-wrap gap-3">
+                                @for (item of Follower; track item.id) {
+                                    <a href="#">
+                                        <img class="rounded-circle " width="66px" height="66px" [src]="item.img" alt="">
+                                    </a>
+                                }
+                            </li>
+                        </ul>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+
+
+            <div class="col-lg-5">
+                <div class="my-4 shadow p-3 rounded-3 w-100">
+
+                    <h5 class="text-center  fw-bold">Weekly Rating</h5>
+
+                    <p class="text-center bg-light w-75 mx-auto p-2 rounded-5 text-yellow">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span class="text-black-50 small fw-bold mx-2">4.7 out of 5</span>
+                    </p>
+
+
+                    <div>
+
+                        <div class="d-flex align-items-center mb-4 gap-3">
+                            <p class="mb-0 small text-purple fw-bold">Service</p>
+                            <div class="progress w-100">
+                                <div class="progress-bar bg-green" role="progressbar" style="width: 75%"
+                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p class="mb-0 small text-purple fw-bold">8</p>
+                        </div>
+
+                        <div class="d-flex align-items-center mb-4 gap-3">
+                            <p class="mb-0 small text-purple fw-bold">Price</p>
+                            <div class="progress w-100">
+                                <div class="progress-bar bg-green" role="progressbar" style="width: 75%"
+                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p class="mb-0 small text-purple fw-bold">6</p>
+                        </div>
+
+                        <div class="d-flex align-items-center mb-4 gap-3">
+                            <p class="mb-0 small text-purple fw-bold">Taste</p>
+                            <div class="progress w-100">
+                                <div class="progress-bar bg-green" role="progressbar" style="width: 75%"
+                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p class="mb-0 small text-purple fw-bold">9.5</p>
+                        </div>
+
+                        <div class="d-flex align-items-center mb-4 gap-3">
+                            <p class="mb-0 small text-purple fw-bold">Comfort</p>
+                            <div class="progress w-100">
+                                <div class="progress-bar bg-green" role="progressbar" style="width: 75%"
+                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p class="mb-0 small text-purple fw-bold">10</p>
+                        </div>
+
+                    </div>
+
+                    <div class="d-flex justify-content-between mt-4">
+                        <p class="fw-bold text-purple">Reviews</p>
+                        <p class="fw-bold small text-green">viwe all</p>
+                    </div>
+
+                    <div>
+                        <div class="d-flex align-items-center shadow px-3 py-1 mb-3 rounded-3 gap-2">
+                            <img class="rounded-circle" width="60px" height="60px" src="/assets/images  (54).jpeg"
+                                alt="">
+                            <div class="w-100">
+                                <div class="d-flex justify-content-between">
+                                    <p class="mb-0 small fw-bold">Dead Pool</p>
+                                    <p class="mb-0 small">26/03/2024</p>
+                                </div>
+                                <p class="mb-0 small">Lorem ipsum dolor sit amet consectetur. Nibh sit viverra lectus
+                                    sed.</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-center shadow px-3 py-1 mb-3 rounded-3 gap-2">
+                            <img class="rounded-circle" width="60px" height="60px" src="/assets/images  (54).jpeg"
+                                alt="">
+                            <div class="w-100">
+                                <div class="d-flex justify-content-between">
+                                    <p class="mb-0 small fw-bold">Dead Pool</p>
+                                    <p class="mb-0 small">26/03/2024</p>
+                                </div>
+                                <p class="mb-0 small">Lorem ipsum dolor sit amet consectetur. Nibh sit viverra lectus
+                                    sed.</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-center shadow px-3 py-1 mb-3 rounded-3 gap-2">
+                            <img class="rounded-circle" width="60px" height="60px" src="/assets/images  (54).jpeg"
+                                alt="">
+                            <div class="w-100">
+                                <div class="d-flex justify-content-between">
+                                    <p class="mb-0 small fw-bold">Dead Pool</p>
+                                    <p class="mb-0 small">26/03/2024</p>
+                                </div>
+                                <p class="mb-0 small">Lorem ipsum dolor sit amet consectetur. Nibh sit viverra lectus
+                                    sed.</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-center shadow px-3 py-1 mb-3 rounded-3 gap-2">
+                            <img class="rounded-circle" width="60px" height="60px" src="/assets/images  (54).jpeg"
+                                alt="">
+                            <div class="w-100">
+                                <div class="d-flex justify-content-between">
+                                    <p class="mb-0 small fw-bold">Dead Pool</p>
+                                    <p class="mb-0 small">26/03/2024</p>
+                                </div>
+                                <p class="mb-0 small">Lorem ipsum dolor sit amet consectetur. Nibh sit viverra lectus
+                                    sed.</p>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                </div>
+
+
+
+
+
+
+            </div>
+
+
+
+
+
+        </div>
+    </div>
+</div>
