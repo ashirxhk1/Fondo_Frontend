@@ -16,7 +16,7 @@ viewsEnums= ViewsEnum;
     {
       id: 1,
       name: "Home",
-      icon: "../assets/home-nav.svg",
+      icon: "./assets/home-nav.svg",
       url: "homeNav",
       role:[this.viewsEnums.WithoutRegisterView,this.viewsEnums.RegisterView,this.viewsEnums.RestuarantView,this.viewsEnums.AdminView ]
     },
